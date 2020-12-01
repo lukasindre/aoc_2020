@@ -1,12 +1,9 @@
 import fileinput
 import itertools
 
-numbers = []
+numbers = [int(line) for line in fileinput.input()]
 
-for line in fileinput.input():
-    numbers.append(int(line))
-
-for combination in itertools.combinations(numbers, 3):
-    if combination[0] + combination[1] + combination[2] == 2020:
-        print(combination[0] * combination[1] * combination[2])
+for x, y, z in itertools.combinations(numbers, 3):
+    if x + y + z == 2020:
+        print(x * y * z)
 
