@@ -1,6 +1,6 @@
 #!/bin/bash
 
-n=2
+n=1
 MAX=25
 while [ "$n" -le "$MAX" ]
 do
