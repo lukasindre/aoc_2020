@@ -6,8 +6,8 @@ database = []
 
 for line in puzzle_input:
     occurence_count = (
-            line[0:line.find('-')],
-            line[line.find('-') + 1:line.find(' ')]
+            int(line[0:line.find('-')]),
+            int(line[line.find('-') + 1:line.find(' ')])
             )
 
     letter = line[line.find(' ') + 1]
