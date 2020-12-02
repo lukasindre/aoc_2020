@@ -21,5 +21,10 @@ for line in puzzle_input:
                 )
             )
 
+correct_count = 0
+
 for (a, b), x, y in database:
-    # do stuff
+    if y.count(x) >= a and y.count(x) <= b:
+        correct_count += 1
+
+print(correct_count)
