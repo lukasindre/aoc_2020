@@ -24,9 +24,7 @@ for line in puzzle_input:
 correct_count = 0
 
 for (a, b), x, y in database:
-    if y[a - 1] == x and y[b - 1] == x:
-        next
-    elif y[a - 1] == x or y[b - 1] == x:
+    if not (y[a - 1] == x and y[b - 1] == x) and (y[a - 1] == x or y[b - 1] == x):
         correct_count += 1
 
 print(correct_count)
