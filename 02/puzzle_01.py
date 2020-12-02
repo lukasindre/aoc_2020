@@ -21,5 +21,5 @@ for line in puzzle_input:
                 )
             )
 
-pp(database)
-
+for (a, b), x, y in database:
+    # do stuff
