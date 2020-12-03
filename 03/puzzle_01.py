@@ -2,10 +2,8 @@ import fileinput
 
 
 travel_map = [line.rstrip() for line in fileinput.input()]
-
 rows = len(travel_map)
 width_of_row = len(travel_map[0])
-
 tree_count = 0
 x = 0
 y = 0
