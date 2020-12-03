@@ -1,5 +1,6 @@
 import fileinput
 
+
 travel_map = [line.rstrip() for line in fileinput.input()]
 
 rows = len(travel_map)
