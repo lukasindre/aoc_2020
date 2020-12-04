@@ -113,7 +113,7 @@ for passport in pass_list:
         if len(str(expire_year)) == 4 and expire_year >= 2020 and expire_year <= 2030:
             expire_year_valid = True
 
-        if HEX.fullmatch('hair_color'):
+        if HEX.fullmatch(hair_color):
             hair_color_valid = True
 
         if eye_color in EYE_COLOR:
@@ -122,7 +122,6 @@ for passport in pass_list:
         if len(passport_id) == 9:
             passport_id_valid = True
 
-        print(hair_color)
         if height_valid and birth_year_valid and issue_year_valid and expire_year_valid and hair_color_valid and eye_color_valid and passport_id_valid:
             counter += 1
 
