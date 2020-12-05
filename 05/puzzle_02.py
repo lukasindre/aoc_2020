@@ -43,9 +43,7 @@ for line in passes:
 
 seat_ids = list(set(seat_ids))
 
-pp(seat_ids)
-
 for seat_id in range(len(seat_ids) - 1):
     if seat_ids[seat_id + 1] - seat_ids[seat_id] != 1:
-        print(seat_ids[seat_id])
+        print(seat_ids[seat_id] + 1)
 
