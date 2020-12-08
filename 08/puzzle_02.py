@@ -1,4 +1,5 @@
 import fileinput
+import copy
 from pprint import pprint as pp
 
 
@@ -20,11 +21,12 @@ def send_it(rules):
             i += 1
 
         stop_loop_count += 1
+        
 
 data = [line.rstrip().split() for line in fileinput.input()]
 
-for counter in range(len(data)):
-    this_try = data
+for counter in range(len(data) - 1):
+    this_try = copy.deepcopy(data)
     
     if data[counter][0] == 'acc':
         continue
