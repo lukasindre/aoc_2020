@@ -8,7 +8,7 @@ def send_it(rules):
     stop_loop_count = 0
    
     while stop_loop_count < len(rules):
-        if i == len(rules) - 1:
+        if i == len(rules):
             print(accumulator)
             break
         elif rules[i][0] == 'acc':
@@ -24,7 +24,7 @@ def send_it(rules):
 data = [line.rstrip().split() for line in fileinput.input()]
 
 for counter in range(len(data)):
-    this_try = data[:]
+    this_try = data
     
     if data[counter][0] == 'acc':
         continue
